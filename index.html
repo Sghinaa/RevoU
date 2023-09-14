@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="css/style.css">
+    <title>KaKa Kalkulator Matematika</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="myHeader">
+        <div id="kaka">KaKa</div>
+        <div id="kal">Kalkulator Matematika</div>
+    </header>
+    <!-- main -->
+    <main class="myContent">
+        <!-- nav-bar -->
+        <nav class="nav-bar">
+            <h1>Hi! Welcome to KaKa</h1>
+            <p>Selamat datang di KaKa&hearts;</p>
+            <p>Kaka adalah website sederhana yang berfungsi untuk menghitung nilai luas dan keliling persegi.</p><br>
+            <nav class="nav-menu">
+                <a href="#JudulLuasPersegi">Hitung Luas Persegi</a>
+                <a href="#JudulKellPersegi">Hitung Keliling Persegi</a>
+            </nav><br><br>
+        </nav>
+        <!-- Luas Persegi -->
+        <section class="LuasPersegi">
+            <div id="JudulLuasPersegi">
+                <h1>Luas Persegi</h1>
+            </div>
+            <img src="asset/square.png" alt="Gambar Persegi">
+            <div class="RumusLuasPersegi">
+                <p><strong>Rumus Luas Persegi yaitu:</strong></p>
+                <div id="RLP"><b>L&equals;s&#215;s</b></div>
+                <div>Keterangan:</div>
+                <div>L = Luas</div>
+                <div>s = sisi</div>
+            </div>
+            <div id="JudulHitungLuas">
+                <h3>Hitung Luas Persegi</h3>
+            </div>
+            <form id="myForm">
+                <div class="InputLuas">
+                    <label for="sisi"><b>Panjang sisi persegi:</b></label>
+                    <input type="number" id="sisi" placeholder="Masukkan panjang sisi persegi" required>
+                </div>
+                <p id="demoRLP"></p>
+                <p id="demoIRLP"></p>
+                <p id="ResultLP"></p>
+                <div class="Btn">
+                    <input type="button" value="Hitung" onclick="HitungLuas()">
+                    <input type="button" value="Reset" onclick="resetFormL()">
+                </div>
+            </form>
+        </section>
+        <!-- Keliling Persegi -->
+        <section class="KelilingPersegi">
+            <div id="JudulKellPersegi">
+                <h1>Keliling Persegi</h1>
+            </div>
+            <img src="asset/square.png" alt="Gambar Persegi">
+            <div class="RumusKellPersegi">
+                <p><strong>Rumus Keliling Persegi yaitu:</strong></p>
+                <div id="RKP"><b>K&equals;4&#215;s</b></div>
+                <div>Keterangan:</div>
+                <div>K = Keliling</div>
+                <div>s = sisi</div>
+            </div>
+            <div id="JudulHitungKeliling">
+                <h3>Hitung Keliling Persegi</h3>
+            </div>
+            <form id="myForm">
+                <div class="InputKell">
+                    <label for="sisik"><b>Panjang sisi persegi:</b></label>
+                    <input type="number" id="sisik" placeholder="Masukkan panjang sisi persegi" required>
+                </div>
+                <p id="demoRKP"></p>
+                <p id="demoIRKP"></p>
+                <p id="ResultKP"></p>
+                <div class="Btn">
+                    <input type="button" value="Hitung" onclick="HitungKell()">
+                    <input type="button" value="Reset" onclick="resetForm()">
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p><b>&copy; KaKa2023</b> RevoU Mini Project</p>
+    </footer>
+    <script src="js/script.js"></script> 
+</body>
+</html>
